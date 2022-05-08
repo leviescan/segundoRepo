@@ -1,0 +1,44 @@
+
+
+<form action="">
+    <div class="control">
+      <div class="">
+      <div class="columns">
+  
+        <div class="column is-3">
+          <label for="" class="label"> nombre </label>
+          <input type="text" name="nombre" class="input" placeholder="nombre" [(ngModel)]="cuadroNombre">
+        </div>
+  
+        <div class="column is-3">
+          <label for="" class="label"> apellido </label>
+          <input type="text" name="apellido" class="input" placeholder="apellido" [(ngModel)]="cuadroApellido" >
+        </div>
+  
+        <div class="column is-3">
+          <label for="" class="label"> cargo </label>
+          <input type="text" name="cargo" class="input" placeholder="cargo" [(ngModel)]="cuadroProfe">
+        </div>
+  
+        <div class="column is-3">
+          <label for="" class="label"> salario </label>
+          <input type="number" name="salario" class="input" placeholder="salario" [(ngModel)]="cuadroSalario">
+        </div>
+  
+  
+      </div>
+    </div>
+  
+    </div><br>
+    <div class="control">
+      <button type="submit" class="button is-link is-outlined  " (click)="agregarEmpleado()">actualizar</button>
+  
+    </div>
+  </form>
+  
+
+<div class="level-item is-centered">
+
+    <button #butttt class="button is-primary has-item-centerd" (click)="backHome()">Go Home</button>
+</div>
+

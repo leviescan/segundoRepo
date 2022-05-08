@@ -1,0 +1,48 @@
+<div class="container is-fluid">
+
+    <h1 class="title has-text-centered">
+      {{title}}
+    </h1>
+  
+  <form action="">
+    <div class="field is-grouped ">
+      <div class="">
+      <div class="columns">
+  
+        <div class="column is-4">
+          <label for="" class="label"> nombre </label>
+          <input type="text" name="nombre" class="input" placeholder="nombre" [(ngModel)]="cuadroNombre">
+        </div>
+  
+        <div class="column is-4">
+          <label for="" class="label"> apellido </label>
+          <input type="text" name="apellido" class="input" placeholder="apellido" [(ngModel)]="cuadroApellido" >
+        </div>
+  
+        <div class="column is-4">
+          <label for="" class="label"> cargo </label>
+          <input type="text" name="cargo" class="input" placeholder="cargo" [(ngModel)]="cuadroProfe">
+        </div>
+  
+        <div class="column is-4">
+          <label for="" class="label"> salario </label>
+          <input type="number" name="salario" class="input" placeholder="salario" [(ngModel)]="cuadroSalario">
+        </div>
+  
+  
+      </div>
+    </div>
+  
+    </div>
+    <div class="control">
+      <button type="submit" class="button is-link is-focused  " (click)="agregarEmpleado()">Agregar</button>
+  
+    </div>
+  </form>
+  
+  </div >
+  <br>
+  
+  <app-componente-hijo *ngFor="let empleado of empleados; let i=index" [empleadoDlista]="empleado" [indiceDL]="i"></app-componente-hijo>
+  
+  
